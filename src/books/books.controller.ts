@@ -26,8 +26,8 @@ export class BooksController {
   }
 
   @Get(':id')
-  findOne(@Param('id') id: string) {
-    return this.booksService.findOne(id);
+  findById(@Param('id') id: string) {
+    return this.booksService.findById(id);
   }
 
   @Patch(':id')
